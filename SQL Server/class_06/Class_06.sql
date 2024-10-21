@@ -76,45 +76,45 @@ FROM orders o JOIN customers c on o.customer_id=c.id
 
 
 
--- CREATE PROCEDURE customer_orders
--- @id int
--- AS
--- BEGIN
--- SELECT o.id , o.total, p.title, p.description , c.name, c.email
--- FROM orders o JOIN customers c on o.customer_id=c.id
---     join products p on o.product_id=p.id WHERE c.id=@id;
--- END;
+CREATE PROCEDURE customer_orders
+@id int
+AS
+BEGIN
+SELECT o.id , o.total, p.title, p.description , c.name, c.email
+FROM orders o JOIN customers c on o.customer_id=c.id
+    join products p on o.product_id=p.id WHERE c.id=@id;
+END;
 
 
--- EXEC customer_orders @id=3;
+EXEC customer_orders @id=3;
 
 
 
--- CREATE PROCEDURE addCustomer 
--- @name VARCHAR(30),
--- @email VARCHAR(30)
--- AS 
--- BEGIN
---     insert into customers (name,email) VALUES (@name,@email); 
--- END;
+CREATE PROCEDURE addCustomer 
+@name VARCHAR(30),
+@email VARCHAR(30)
+AS 
+BEGIN
+    insert into customers (name,email) VALUES (@name,@email); 
+END;
 
 
--- CREATE PROCEDURE addProducts 
--- @title VARCHAR(100),
--- @description TEXT,
--- @price int,
--- @quantity int
--- AS 
--- BEGIN
---     insert into products(title,description,price,quantity)
--- 	VALUES (@title,@description,@price,@quantity); 
--- END;
+CREATE PROCEDURE addProducts 
+@title VARCHAR(100),
+@description TEXT,
+@price int,
+@quantity int
+AS 
+BEGIN
+    insert into products(title,description,price,quantity)
+	VALUES (@title,@description,@price,@quantity); 
+END;
 
--- exec addCustomer @name='kashif',@email='kashif@gmail.com';
+exec addCustomer @name='kashif',@email='kashif@gmail.com';
 
 select * from customers;
 
--- exec addProducts @title='iPhone 16',@description='Latest model of Apple iPhone',@price=300,@quantity=10;
+exec addProducts @title='iPhone 16',@description='Latest model of Apple iPhone',@price=300,@quantity=10;
 
 SELECT * from products;
 
