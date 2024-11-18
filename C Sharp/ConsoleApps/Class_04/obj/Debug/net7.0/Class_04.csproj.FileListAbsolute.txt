@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\bin\Debug\net7.0\Class_04.exe
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\bin\Debug\net7.0\Class_04.deps.json
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\bin\Debug\net7.0\Class_04.runtimeconfig.json
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\bin\Debug\net7.0\Class_04.dll
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\bin\Debug\net7.0\Class_04.pdb
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.AssemblyInfo.cs
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.dll
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\refint\Class_04.dll
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.pdb
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\Class_04.genruntimeconfig.cache
+C:\Users\Admin\Documents\Aptech-Batch-2023-PMTZ-202310F\C Sharp\ConsoleApps\Class_04\obj\Debug\net7.0\ref\Class_04.dll
