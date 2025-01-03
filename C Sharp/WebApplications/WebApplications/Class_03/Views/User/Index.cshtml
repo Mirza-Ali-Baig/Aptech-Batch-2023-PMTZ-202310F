@@ -1,0 +1,100 @@
+﻿@using Class_03.Controllers;
+<h1>
+    Razor Syntax
+</h1>
+
+@for (int i=1; i<= 10;i++)
+{
+    <h2>  @i ) Inside For Loop</h2>
+}
+
+
+@{
+    string name = "Yasir";
+    int age = 20;
+
+    // @name
+
+
+    string[] names =
+            {
+                "Baist",
+                "Khan",
+                "Ali",
+                "Usman",
+                "Sajid"
+            };
+}
+
+@*
+    Comment
+*@
+@name
+
+<strong>
+    Age : @age
+</strong>
+
+<ul>
+    @foreach (string item in names)
+    {
+        <li>
+            Name : @item
+        </li>
+    }
+</ul>
+
+@{
+    string role = "Admin";
+}
+
+@if (role=="Admin")
+{
+    <h3>You Can Access Admin Panel</h3>
+}
+else
+{
+    <h3>You Can't Access Admin Panel</h3>
+    
+}
+
+
+
+<h3>
+    ViewData
+</h3>
+
+<strong>
+    Name : @ViewData["data1"] 
+</strong>
+<br />
+<strong>
+    Name : @ViewData["data2"] 
+</strong>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th> 
+        <th>
+            Name
+        </th> 
+        <th>
+            Email
+        </th>  
+        <th>
+            Age
+        </th>
+    </tr>
+    @foreach (var item in (List<Student>)ViewData["students"])
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Age</td>
+        </tr>
+    }
+</table>

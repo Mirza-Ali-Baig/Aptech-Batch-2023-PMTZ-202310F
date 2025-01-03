@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Class 04";
+}
+
+<h1>
+    Home Page
+</h1>
+
+<h2>
+    Name : @ViewData["data1"]
+
+<h2>
+    Name : @ViewBag.hello
+</h2>
+
+<ul>
+    @foreach (string item in ViewBag.users)
+        {
+            <li> User Name : @item</li>
+        }
+</ul>
+
+@ViewBag.data1
+<br />
+@ViewData["hello"]
+<br />
+
+@TempData["name"]
