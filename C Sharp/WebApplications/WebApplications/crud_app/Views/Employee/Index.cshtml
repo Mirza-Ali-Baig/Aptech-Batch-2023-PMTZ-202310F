@@ -1,0 +1,53 @@
+﻿@model List<Employee>
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col-9">
+            <h1>All Employees</h1>
+        </div> 
+        <div class="col-3">
+            <a asp-controller="Employee" asp-action="Create" class="btn btn-dark w-100 text-white">Create Employee</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Designation</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Employee item in Model)
+                    {
+                        
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.Designation</td>
+                        <td>@item.Salary</td>
+                        <td>
+                            <a href="" class="text-primary">Edit</a>
+                            <a href="" class="text-danger">Delete</a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
