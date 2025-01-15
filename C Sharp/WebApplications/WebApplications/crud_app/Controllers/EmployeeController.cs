@@ -31,5 +31,33 @@ namespace crud_app.Controllers
             applicationDbContext.SaveChanges();
             return RedirectToAction("index");
         }
+
+
+        public IActionResult Edit(int id) {
+
+            var employee=applicationDbContext.Employees.Find(id);
+
+            if(employee == null) return NotFound();
+            
+            return View(employee);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id,Employee employee)
+        {
+            applicationDbContext.Employees.Update(employee);
+            applicationDbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var employee = applicationDbContext.Employees.Find(id);
+            if (employee == null) return NotFound();
+
+            applicationDbContext.Employees.Remove(employee);
+            applicationDbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
